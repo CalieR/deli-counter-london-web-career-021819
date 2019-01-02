@@ -5,7 +5,7 @@ def line(katz_deli)
     puts "The line is currently empty."
   else # insert the position number in front of each person
     queue = []
-    katz_deli.each_with_index { |person, index| queue << "#{index + 1}. #{person}"}
-    puts "The line is currently: " + result array
+    katz_deli.each_with_index { |person, index| queue << "#{index + 1}. #{person}" }
+    puts "The line is currently: #{queue} "
   end
 end

@@ -19,5 +19,10 @@ end
 def now_serving(katz_deli)
   if katz_deli.length == 0
     puts "There is nobody waiting to be served!"
+  else
+    # call out next person
+    puts "Currently serving #{katz_deli.first}."
+    # remove person from line
+    katz_deli.delete_at(0)
   end
 end

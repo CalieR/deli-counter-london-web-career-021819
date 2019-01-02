@@ -6,7 +6,7 @@ def line(katz_deli)
   else # insert the position number in front of each person
     queue = []
     katz_deli.each_with_index { |person, index| queue << "#{index + 1}. #{person}" }
-    
+
     puts "The line is currently: #{queue.join(", ")} "
   end
 end
